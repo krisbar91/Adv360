@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp U         &kp I      &kp O     &kp P     &kp BSLH
+&kp EQUAL  &kp N1     &kp N2     &kp N3      &kp N4      &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7        &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W      &kp E       &kp R       &kp T   &none                                                    &none      &kp Y   &kp U         &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A      &hm LALT S &hm LCTRL D &hm LSHFT F &kp G &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RSHFT J   &hm RCTRL K &hm RALT L &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &mo 4         &kp PG_DN  &kp ENTER  &kp SPACE          &kp DOWN        &kp UP   &kp LBKT  &kp RBKT  &kp PRINTSCREEN
+&kp LSHFT  &kp Z      &kp X      &kp C       &kp V       &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M         &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS   &kp LEFT    &kp RIGHT          &kp BSPC  &kp DEL    &mo 4         &mo 5   &kp ENTER  &kp SPACE     &kp DOWN  &kp UP        &kp LBKT  &kp RBKT  &kp PRINTSCREEN
             >;
         };
 
@@ -68,7 +68,7 @@
             >;
         };
 
-        extra1 {
+        ws {
             display-name = "Workspaces";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans      &trans      &trans      &trans      &trans
@@ -76,6 +76,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LA(N5)  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans      &trans      &trans      &trans      &trans
+            >;
+        };
+
+        sym {
+            display-name = "Symbols";
+            bindings = <
+&none   &none   &none   &none   &none   &none   &none                                       &none   &none   &none       &none       &none       &none       &none 
+&none   &none   &none   &none   &none   &none   &none                                       &none   &none   &kp LBRC  &kp RBRC      &kp PIPE    &none       &none 
+&none   &none   &none   &none   &none   &none   &none   &none   &none       &none   &none   &none   &none   &kp LPAR  &kp RPAR      &kp MINUS   &kp EQUAL   &none 
+&none   &none   &none   &none   &none   &none                   &none       &none                   &none   &kp LBKT  &kp RBKT      &kp UNDER   &none       &none 
+&none   &none   &none   &none   &none           &none   &none   &none       &none   &none   &none           &none       &none       &none       &none       &none 
             >;
         };
 
